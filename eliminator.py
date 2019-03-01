@@ -9,7 +9,7 @@ else:
 		except:
 			path=input("Invalid path\nIf you want to quit, then please write 'q'\nRemember to write windows' folder paths with the following format: C:\\xxx\\xxx\\xxx")
 			continue
-			
+
 list=[]
 fname=None
 fname2=None
@@ -28,10 +28,10 @@ for line in fhandle:
 	if word not in list:
 		list.append(word)
 fhandle.close()
-			    
+
 while fname2!="q":
 	try:
-		fname2=input("Please enter name of text file for list with values to be corrected:\n") 
+		fname2=input("Please enter name of text file for list with values to be corrected:\n")
 		fhandle2=open(fname2)
 	except:
 		print("Invalid file name. Remember to put the '.txt' suffix at the end of the file\nYou can exit by typing 'q' in the terminal.")
@@ -48,18 +48,18 @@ rlist=[]
 
 while ofname!="q":
 	try:
-		ofname=input("Please enter the name that you want for the output text file.\nRemember to put the '.txt' suffix at the end of the name.")
- 		of=open(ofname,"w+")
+	    ofname=input("Please enter the name that you want for the output text file.\nRemember to put the '.txt' suffix at the end of the name.")
+ 	    of=open(ofname,"w+")
 	except:
 		print("Invalid file name. Remember to put the '.txt' suffix at the end of the file\nYou can exit by typing 'q' in the terminal.")
 		continue
 
 for i in range(len(vlist)):
-		if vlist[i] in list:
-			rlist.append("yes")
-			of.write("yes\n")
-		else:
-			rlist.append("no")
-			of.write("no\n")
+	if vlist[i] in list:
+		rlist.append("yes")
+		of.write("yes\n")
+	else:
+		rlist.append("no")
+		of.write("no\n")
 print(rlist)
 of.close()
