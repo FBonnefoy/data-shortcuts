@@ -17,7 +17,7 @@ ofname=None
 
 while fname!="q":
 	try:
-		fname=input("Please enter name of text file for keys with right values:\n)
+		fname=input("Please enter name of text file for keys with right values:\n")
 		fhandle=open(fname)
 	except:
 		print("Invalid file name. Remember to put the '.txt' suffix at the end of the file\nYou can exit by typing 'q' in the terminal.")
