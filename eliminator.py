@@ -31,7 +31,7 @@ fhandle.close()
 			    
 while fname2!="q":
 	try:
-		fname2=input("Please enter name of text file for list with values to be corrected:\n) 
+		fname2=input("Please enter name of text file for list with values to be corrected:\n") 
 		fhandle2=open(fname2)
 	except:
 		print("Invalid file name. Remember to put the '.txt' suffix at the end of the file\nYou can exit by typing 'q' in the terminal.")
@@ -48,7 +48,7 @@ rlist=[]
 
 while ofname!="q":
 	try:
-		ofname=input("Please enter the name that you want for the output text file.\nRemember to put the '.txt' suffix at the end of the name.)
+		ofname=input("Please enter the name that you want for the output text file.\nRemember to put the '.txt' suffix at the end of the name.")
  		of=open(ofname,"w+")
 	except:
 		print("Invalid file name. Remember to put the '.txt' suffix at the end of the file\nYou can exit by typing 'q' in the terminal.")
