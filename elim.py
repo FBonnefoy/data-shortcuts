@@ -1,7 +1,7 @@
 import os
 cwd = os.getcwd()
 cwd
-fname="listecharles.txt"
+fname="keys.txt"
 fhandle=open(fname)
 list=[]
 for line in fhandle:
@@ -9,9 +9,9 @@ for line in fhandle:
 	word=str(word)
 	if word not in list:
 		list.append(word)
-print(list)
+
 fhandle.close()
-fname2="acorriger.txt"
+fname2="listtocorrect.txt"
 fhandle2=open(fname2)
 vlist=[]
 for line in fhandle2:
@@ -19,9 +19,9 @@ for line in fhandle2:
 	word=str(word)
 	if word not in vlist:
 		vlist.append(word)
-print(vlist)
+
 rlist=[]
-ofname="shit.txt"
+ofname="out.txt"
 of=open(ofname,"w+")
 for i in range(len(vlist)):
 		if vlist[i] in list:
@@ -30,5 +30,5 @@ for i in range(len(vlist)):
 		else:
 			rlist.append("no")
 			of.write("no\n")
-print(rlist)
+
 of.close()
