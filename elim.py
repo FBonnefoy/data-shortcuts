@@ -32,3 +32,4 @@ for i in range(len(vlist)):
 			of.write("no\n")
 print(rlist)
 of.close()
+jl
